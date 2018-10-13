@@ -1,45 +1,45 @@
 var Controller = require('./Controller')
-var led = new Controller(60)
+var strip = new Controller(60)
 
 var tests = [
   () => {
     console.log('Fill LED w/ red.')
-    led.set(255, 0, 0)
-    led.write()
+    strip.set(255, 0, 0)
+    strip.write()
   },
   () => {
     console.log('Fill LED w/ green.')
-    led.set(0, 255, 0)
-    led.write()
+    strip.set(0, 255, 0)
+    strip.write()
   },
   () => {
     console.log('Fill LED w/ blue.')
-    led.set(0, 0, 255)
-    led.write()
+    strip.set(0, 0, 255)
+    strip.write()
   },
   () => {
     console.log('Fill LED w/ red (hex).')
-    led.setHex('#FF0000')
-    led.write()
+    strip.setHex('#FF0000')
+    strip.write()
   },
   () => {
     console.log('Fill LED w/ green (hex).')
-    led.setHex('#00FF00')
-    led.write()
+    strip.setHex('#00FF00')
+    strip.write()
   },
   () => {
     console.log('Fill LED w/ blue (hex).')
-    led.setHex('#0000FF')
-    led.write()
+    strip.setHex('#0000FF')
+    strip.write()
   },
   () => {
     console.log('Fill length of LED.')
     var i = 0
-    led.clear()
+    strip.clear()
     var fillInterval = setInterval(() => {
       if (i < 60) {
-        led.setPixel(i, 255, 255, 255)
-        led.write()
+        strip.setPixel(i, 255, 255, 255)
+        strip.write()
         i++
       } else {
         clearInterval(fillInterval)
@@ -49,11 +49,11 @@ var tests = [
   () => {
     console.log('Fill length of LED (Hex).')
     var i = 0
-    led.clear()
+    strip.clear()
     var fillInterval = setInterval(() => {
       if (i < 60) {
-        led.setPixelHex(i, '#123456')
-        led.write()
+        strip.setPixelHex(i, '#123456')
+        strip.write()
         i++
       } else {
         clearInterval(fillInterval)
@@ -62,8 +62,8 @@ var tests = [
   },
   () => {
     console.log('Clear LED strip.')
-    led.clear()
-    led.write()
+    strip.clear()
+    strip.write()
   }
 ]
 
