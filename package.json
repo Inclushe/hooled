@@ -1,10 +1,18 @@
 {
   "name": "hooled",
-  "version": "0.0.2",
-  "description": "",
+  "version": "0.0.3",
+  "description": "Node.js Raspberry Pi library for the APA102C LED strip",
+  "keywords": [
+    "led",
+    "APA102C"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Inclushe/hooled.git"
   },
   "author": "Ethan <inclushe@gmail.com>",
   "license": "ISC",
