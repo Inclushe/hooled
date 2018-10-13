@@ -70,6 +70,7 @@ strip.set(red, green, blue)
 // Set the entire strip to red.
 
 strip.set(255, 0, 0)
+strip.write()
 ```
 
 ### Set entire strip to hex value
@@ -86,6 +87,7 @@ strip.setHex(hexString)
 // Set the entire strip to blue.
 
 strip.setHex('#0000ff')
+strip.write()
 ```
 
 ### Set a pixel to RGB value
@@ -103,6 +105,7 @@ strip.setPixel(index, red, green, blue)
 // Set the first pixel to green.
 
 strip.setPixel(0, 0, 255, 0)
+strip.write()
 ```
 
 ### Set a pixel to hex value
@@ -120,6 +123,7 @@ strip.setPixelHex(index, hexString)
 // Set the first pixel to yellow.
 
 strip.setPixelHex(0, '#ffff00')
+strip.write()
 ```
 
 ### Write to the LED strip
@@ -132,9 +136,8 @@ strip.write()
 
 ```javascript
 strip.clear()
+strip.write()
 ```
-
-- You still need to run `strip.write()` to clear the strip.
 
 ## Thanks
 
