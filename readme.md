@@ -22,7 +22,7 @@ I'm a wimp so no soldering required...
 
 Pin numbers according to https://pinout.xyz/
 
-Still confused? [Look at how I wired it up.](./layout.png)
+Still confused? [Look at how I wired it up.](https://i.imgur.com/XvQiRxA.jpg)
 
 ## Installation
 
