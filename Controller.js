@@ -76,7 +76,7 @@ Controller.prototype.setPixel = function (index, r, g, b, brightness) {
     this.notSetupMessage()
     return
   }
-  console.log(index)
+  // console.log(index)
   // Check if brightness is not set or out of range. If so, set to full.
   if (!(brightness >= 0xE0 && brightness <= 0xFF)) brightness = 0xFF
   // Sets brightness of pixel at index

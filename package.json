@@ -1,6 +1,6 @@
 {
   "name": "hooled",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Node.js Raspberry Pi library for the APA102C LED strip",
   "keywords": [
     "led",
